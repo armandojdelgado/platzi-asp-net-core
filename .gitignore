@@ -1,0 +1,9 @@
+obj
+bin
+.vscode
+df
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+appsettings.json
+appsettings.Development.json
