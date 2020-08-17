@@ -1,4 +1,6 @@
+using System;
 using Microsoft.AspNetCore.Mvc;
+using platzi_asp_net_core.Models;
 
 namespace platzi_asp_net_core.Controllers
 {
@@ -6,7 +8,12 @@ namespace platzi_asp_net_core.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            //Instancia del Modelo
+            var escuela = new Escuela();
+            escuela.AñoFundación = 2005;
+            escuela.EscuelaId = Guid.NewGuid().ToString();
+            escuela.Nombre = "Platzi School";
+            return View(escuela);//Llama la vista Index
         }
     }
 }
