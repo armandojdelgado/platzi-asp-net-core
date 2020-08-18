@@ -14,6 +14,11 @@ namespace platzi_asp_net_core.Controllers
             escuela.UniqueId = Guid.NewGuid().ToString();
             escuela.Nombre = "Platzi School";
 
+            escuela.Ciudad = "Bogota";
+            escuela.Pais = "Colombia";
+            escuela.Dirección = "Calle 70 # 13";
+            escuela.TipoEscuela = TiposEscuela.Secundaria;
+
             ViewBag.CosaDinamica = "La Monja"; //Dato dinamico
 
             return View(escuela);//Llama la vista Index
