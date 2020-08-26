@@ -10,7 +10,7 @@ namespace platzi_asp_net_core.Controllers
         public IActionResult Index()
         {
             return View(new Asignatura{Nombre="Programacion",
-                                        UniqueId=Guid.NewGuid().ToString()
+                                        Id=Guid.NewGuid().ToString()
                         });
         }
 
@@ -20,19 +20,19 @@ namespace platzi_asp_net_core.Controllers
             var listaAsignaturas = new List<Asignatura>()
                     {
                         new Asignatura{Nombre="Matematicas",
-                                        UniqueId=Guid.NewGuid().ToString()
+                                        Id=Guid.NewGuid().ToString()
                         },
                         new Asignatura{Nombre="Educación Física",
-                                        UniqueId=Guid.NewGuid().ToString()
+                                        Id=Guid.NewGuid().ToString()
                         },
                         new Asignatura{Nombre="Español",
-                                        UniqueId=Guid.NewGuid().ToString()
+                                        Id=Guid.NewGuid().ToString()
                         },
                         new Asignatura{Nombre="Ciencias Naturales",
-                                        UniqueId=Guid.NewGuid().ToString()
+                                        Id=Guid.NewGuid().ToString()
                         },
                         new Asignatura{Nombre="Programacion",
-                                        UniqueId=Guid.NewGuid().ToString()
+                                        Id=Guid.NewGuid().ToString()
                         }
                     };
 
